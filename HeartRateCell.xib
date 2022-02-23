@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeartRateCell" rowHeight="175" id="KGk-i7-Jjw" customClass="HeartRateCell" customModule="OxygenSaturation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="365" height="175"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="365" height="175"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YDa-QC-5ki">
+                        <rect key="frame" x="18" y="18" width="329" height="139"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eli-dS-3ti">
+                                <rect key="frame" x="8" y="6" width="313" height="127"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Heart rate last night" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pwa-9Y-5Jo">
+                                        <rect key="frame" x="0.0" y="0.0" width="313" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FfK-c6-lPt">
+                                        <rect key="frame" x="0.0" y="27.5" width="313" height="60.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="1ep-HS-K8D">
+                                                <rect key="frame" x="0.0" y="0.0" width="244.5" height="60.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Min:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5P3-U9-Lb6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="244.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Max:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zar-Ml-Wxh">
+                                                        <rect key="frame" x="0.0" y="23.5" width="244.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avg:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6U-jZ-XRO">
+                                                        <rect key="frame" x="0.0" y="47" width="244.5" height="13.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.square.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zKy-oq-g0W">
+                                                <rect key="frame" x="252.5" y="1" width="60.5" height="58"/>
+                                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="zKy-oq-g0W" secondAttribute="height" id="JN9-ns-HGc"/>
+                                                    <constraint firstAttribute="height" constant="60.5" id="d3q-G6-rMg"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadow">
+                                                        <real key="value" value="0.050000000000000003"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                        </subviews>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadow">
+                                                <real key="value" value="0.10000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePC-8a-EWy">
+                                        <rect key="frame" x="0.0" y="96" width="308" height="31"/>
+                                        <color key="backgroundColor" white="1" alpha="0.55986134109999997" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="Mmq-Xq-RDX"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Tap to view details">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="detailsViewPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Lhv-WH-GeQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ePC-8a-EWy" secondAttribute="trailing" constant="5" id="0Cq-BL-CTf"/>
+                                    <constraint firstAttribute="trailing" secondItem="FfK-c6-lPt" secondAttribute="trailing" id="S63-kO-L4f"/>
+                                    <constraint firstItem="Pwa-9Y-5Jo" firstAttribute="leading" secondItem="eli-dS-3ti" secondAttribute="leading" id="YJR-yN-MIc"/>
+                                    <constraint firstItem="ePC-8a-EWy" firstAttribute="leading" secondItem="eli-dS-3ti" secondAttribute="leading" constant="5" id="nxY-no-uuO"/>
+                                    <constraint firstItem="FfK-c6-lPt" firstAttribute="leading" secondItem="eli-dS-3ti" secondAttribute="leading" id="qac-Ol-Lju"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pwa-9Y-5Jo" secondAttribute="trailing" id="tH2-ZO-cpU"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82074643906657962" green="1" blue="0.72946719232965385" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="eli-dS-3ti" firstAttribute="leading" secondItem="YDa-QC-5ki" secondAttribute="leading" constant="8" id="CSk-V7-W4n"/>
+                            <constraint firstAttribute="trailing" secondItem="eli-dS-3ti" secondAttribute="trailing" constant="8" id="dKF-5A-mhc"/>
+                            <constraint firstAttribute="bottom" secondItem="eli-dS-3ti" secondAttribute="bottom" constant="6" id="mHP-ce-bdf"/>
+                            <constraint firstItem="eli-dS-3ti" firstAttribute="top" secondItem="YDa-QC-5ki" secondAttribute="top" constant="6" id="wIg-a1-bAV"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadow">
+                                <real key="value" value="0.29999999999999999"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YDa-QC-5ki" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="9tv-Lh-c15"/>
+                    <constraint firstAttribute="bottom" secondItem="YDa-QC-5ki" secondAttribute="bottom" constant="18" id="Fh0-pn-V0x"/>
+                    <constraint firstAttribute="trailing" secondItem="YDa-QC-5ki" secondAttribute="trailing" constant="18" id="GJ8-yr-daO"/>
+                    <constraint firstItem="YDa-QC-5ki" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="Tw5-x5-0jd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="avgHeartRate" destination="P6U-jZ-XRO" id="Khi-4r-I5O"/>
+                <outlet property="maxHeartRate" destination="Zar-Ml-Wxh" id="R4f-Cp-doK"/>
+                <outlet property="minHeartRate" destination="5P3-U9-Lb6" id="6xB-c0-OYZ"/>
+                <outlet property="viewDetailsButton" destination="ePC-8a-EWy" id="x7C-tZ-4fq"/>
+            </connections>
+            <point key="canvasLocation" x="171.73913043478262" y="-265.51339285714283"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="heart.square.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
